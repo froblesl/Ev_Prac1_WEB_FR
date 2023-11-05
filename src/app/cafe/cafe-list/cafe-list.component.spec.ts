@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { CafeListComponent } from './cafe-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('CafeListComponent', () => {
   let component: CafeListComponent;
@@ -11,6 +12,7 @@ describe('CafeListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ CafeListComponent ]
     })
     .compileComponents();
